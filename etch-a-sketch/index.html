@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Etch-a-sketch</title>
+  </head>
+  <body>
+    <h1>Etch-a-sketch</h1>
+    <main>
+      <div class="container">
+        <div id="settings">
+          <input type="color" id="color-input" value="#333333" />
+          <button
+            class="settings-button mode-button settings-button--active"
+            value="color"
+          >
+            Color mode
+          </button>
+          <button class="settings-button mode-button" value="rainbow">
+            Rainbow mode
+          </button>
+          <button class="settings-button mode-button" value="eraser">
+            Eraser
+          </button>
+          <button id="clear-btn" class="settings-button">Clear</button>
+          <div class="setting-container">
+            <span id="grid-setting">16 x 16</span>
+            <input
+              name="grid-range"
+              type="range"
+              id="grid-range"
+              value="16"
+              min="0"
+              max="64"
+              step="16"
+            />
+          </div>
+        </div>
+        <div id="grid-container"></div>
+      </div>
+    </main>
+    <script src="scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <button onclick="playRound('Rock')">Rock</button>
+    <button onclick="playRound('Paper')">Paper</button>
+    <button onclick="playRound('Scissors')">Scissors</button>
+
+    <h2>Results</h2>
+
+    <div id="playerSelections">
+      Player: | Computer: 
+    </div>
+    <div id="results">
+      Results: 
+    </div>
+    <div id="score">
+      Score: Player[0] | Computer[0]
+    </div>
+
+    <p id="winner"></p>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

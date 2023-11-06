@@ -1,0 +1,87 @@
+:root {
+  /* color palette */
+  --color-white: #fff;
+  --color-black: #2d2d2d;
+
+  --griffindor-red: #9c1203;
+  --griffindor-dark-red: #740001;
+  --griffindor-yellow: #e3a000;
+  --griffindor-gold: #d3a625;
+
+  --background-color: var(--griffindor-yellow);
+  --text-color: var(--color-black);
+
+  --font-size-lg: 3rem;
+  --font-size-md: 2rem;
+  --font-size-sm: 1rem;
+}
+
+/* Gryfindor theme */
+html[data-theme="light"] {
+  --background-color: var(--color-white);
+  --text-color: var(--color-black);
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+
+  font-size: calc(15px + 0.390625vw);
+  font-family: "Risque", cursive;
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+h1,h3 {
+  padding: 10px;
+  border-bottom: solid 1px var(--griffindor-dark-red);
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.banner-image {
+  display: block;
+  width: 100%;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  margin-bottom: 10px;
+  height: 50px;
+  border: solid 3px var(--color-black);
+  background: var(--griffindor-dark-red);
+  color: var(--griffindor-gold);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+}
+
+button:hover {
+  background: var(--griffindor-red);
+}
+
+.recipe-button {
+  width: 100%;
+}
+
+li {
+  margin-bottom: 30px;
+}
+
+.go-back {
+  display: flex; 
+  justify-content: center; 
+  margin-top: 20px;
+}
